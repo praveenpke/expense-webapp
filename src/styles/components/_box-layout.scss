@@ -1,0 +1,53 @@
+.box-layout{
+    background: url('/img/money-medium.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    &__box{
+        margin-left: 30rem;
+        background: fade-out($color: $off-black, $amount: 0.5);
+        border-radius: 3px;
+        text-align: center;
+        width: 25rem;
+        padding: $l-size $m-size;
+        color: white;
+    }
+
+    &__title{
+        margin: 0 0 $m-size 0;
+        line-height: 1;
+        
+    }
+
+    &__btn{
+        background: url('/img/google.png');
+        padding: 2rem 10rem;
+        background-repeat: no-repeat;
+        box-shadow: -1px 10px 5px 0px rgba(51,51,51,1);
+        transition: all 0.5s;
+        border: none;
+        border-radius: 2rem;
+        outline: none;
+    }
+
+    &__btn:active{
+        outline: none;
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 0px rgba(51,51,51,1);
+    }
+
+
+}
+
+@media (max-width:1024px){
+    .box-layout__box{
+        margin: 0;
+    }
+}

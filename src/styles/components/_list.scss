@@ -1,0 +1,55 @@
+.list-header{
+    background: $off-light-white;
+    border: 1px solid darken($off-light-white,7%);
+    color: $grey;
+    display: flex;
+    justify-content: space-between;
+    padding: $s-size $m-size;
+}
+
+.list-item{
+    border: 1px solid darken($off-light-white,7%);
+    border-top:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    color: $dark-grey;
+    padding: $s-size;
+    transition: all 0.5s ease;
+    
+    cursor: pointer;
+
+    &:hover{
+        background-color:$off-light-white;
+    }   
+
+
+
+    &__title{
+        margin: 0;
+        word-break: break-all;
+        text-transform: capitalize;
+    }
+
+
+    &__subtitle{
+        color: $grey;
+        font-size: 1.4rem;
+        font-style: italic;
+    }
+
+    &__data{
+        margin: $s-size 0 0 0;
+    }   
+
+    &--message{
+        font-style: italic;
+        color: $grey;
+        padding: $m-size;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:1.4rem;
+    }
+}

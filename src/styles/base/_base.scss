@@ -1,12 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
 html{
     
-   
+   margin: 0;
+   border: 0;
+   font-size: 62.5%;
+
 }
 
 
 body{
     font-family: Helvetica, Arial, sans-serif;
-  
+   font-size: $m-size;
+    color: $dark-grey;
+    line-height: 1.6;
 }
 
 button{
@@ -20,3 +29,6 @@ button:disabled{
 .is-active{
     font-weight: bold;
 }
+
+
+
